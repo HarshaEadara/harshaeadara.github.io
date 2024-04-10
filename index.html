@@ -161,9 +161,11 @@
 
 						// Create an array of typing text
 						const typingTexts = [
-						'Data Analyst  ',
-						'Insight Analyst  ',
-						'Business Analyst   ',
+						'Data Analytics   ',
+						'Data Science   ', 
+						'Data Engineering   ',
+						'Machine Learning   ',
+						'Business Analytics    ',
 						];
 
 						// Create a function to display the typing animation for a given text
@@ -172,14 +174,14 @@
 						for (let i = 0; i < text.length; i++) {
 							setTimeout(() => {
 							typingAnimationElement.textContent += text[i];
-							}, i * 200); // Increase the delay to slow down the typing animation
+							}, i * 110); // Increase the delay to slow down the typing animation
 						}
 
 						// Once the animation is complete, reset the text and start over
 						setTimeout(() => {
 							typingAnimationElement.textContent = '';
 							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-						}, text.length * 200);
+						}, text.length * 120);
 						}
 
 						// Start the typing animation loop
@@ -190,8 +192,8 @@
 						<br>
 						<br>
 			            <h2>A Data and Insight Analyst</h2>
-						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
-						<!-- <br> -->
+						<!-- <h7 class="d-flex" style="margin-bottom: 0" >With over 3 years of experience</h7> -->
+						<br> 
 			            <p><a href="https://www.linkedin.com/in/harsha-eadara/" class="btn btn-primary py-3 px-4">LinkedIn</a> 
 							<a href="https://github.com/HarshaEadara" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
 		            </div>
@@ -251,13 +253,18 @@
 									
 									<span>Data Visualization</span> <span class="pull-right">85%</span>
 									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 89%" aria-valuenow="85" aria-valuemin="0"
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
 											aria-valuemax="100"></div>
 									</div>
 									
 									<span>Data Engineering</span> <span class="pull-right">80%</span>
 									<div class="progress">
 										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									<span>Machine Learning </span> <span class="pull-right">79%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 79%" aria-valuenow="79" aria-valuemin="0"
 											aria-valuemax="100"></div>
 									</div>
 								</div>
@@ -331,7 +338,7 @@
 						<span class="position">Sky UK</span>
 						<p class="mt-4">Sky UK is one of Europe's leading media and entertainment company with over 31K+ professionals globally.  
 							<ul>
-								<li style="text-align: justify;">Created day-view dashboards for each customer’s journey and delivered daily reports to boost customer service at contact centres.</li>
+								<li style="text-align: justify;">Created Day-view dashboards to track customer journeys via Customer segmentation, enhancing contact centre service through daily report delivery.</li>
 								<li style="text-align: justify;">Delivered daily dashboards and reports from contact centres to aid customer service and various organizational teams.</li>
 								<li style="text-align: justify;">Improved overall efficiency by conducting thorough research to design, develop, and maintain data pipelines, ensuring optimal performance through A/B testing.</li>
 							</ul>
